@@ -1,5 +1,5 @@
 import mongoose from "mongoose";
-
+function conexion(){
 const url ="mongodb+srv://electrictiesto:OzRIMlCDq5OhRVBI@cluster0.c9wxd9o.mongodb.net/nombre_de_la_base_de_datos?retryWrites=true&w=majority&appName=Cluster0/examen";
 
 (async () => {
@@ -10,3 +10,5 @@ const url ="mongodb+srv://electrictiesto:OzRIMlCDq5OhRVBI@cluster0.c9wxd9o.mongo
         console.error("Error de conexión:", error);
     }
 })();
+}
+ export default conexion()
