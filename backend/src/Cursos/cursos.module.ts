@@ -3,12 +3,12 @@ import { MongooseModule } from '@nestjs/mongoose';
 import { CursosController } from './cursos.controller';
 import { CursosService } from './cursos.service';
 import { Curso, CursoSchema } from './curso.model';
-import { TemasModule } from '../Temas/temas.module'; // Asegúrate de que la ruta sea correcta
+import { TemasModule } from '../Temas/temas.module'; 
 
 @Module({
     imports: [
         MongooseModule.forFeature([{ name: Curso.name, schema: CursoSchema }]),
-        TemasModule, // Agrega esta línea
+        TemasModule, 
     ],
     controllers: [CursosController],
     providers: [CursosService],
