@@ -8,7 +8,7 @@ import { TemasModule } from '../Temas/temas.module'; // Asegúrate de que la rut
 @Module({
     imports: [
         MongooseModule.forFeature([{ name: Curso.name, schema: CursoSchema }]),
-        TemasModule, // Agrega esta línea
+        TemasModule,
     ],
     controllers: [CursosController],
     providers: [CursosService],
